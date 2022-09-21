@@ -105,7 +105,7 @@ async def xkcd(ctx):
 
 @bot.command()
 async def poll(ctx):
-    questions = ["On est d'accord qu'on dit Chocolatine?", "Les promos impaires sont BIEN meilleures que les promos impaires non?", "L'été c'est bien mieux que l'hiver"] # The ultimate questions
+    questions = ["On est d'accord qu'on dit Chocolatine?", "Les promos impaires sont BIEN meilleures que les promos paires non?", "L'été c'est bien mieux que l'hiver"] # The ultimate questions
     q = questions[random.randint(0, len(questions)) - 1]
     await ctx.send(f"Réglons ça une bonne fois pour toutes: {q}")
     message = await ctx.send(q)
